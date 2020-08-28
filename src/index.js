@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Directory from './pages/Directory';
+import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import "bootstrap/dist/css/bootstrap.min.css"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Directory />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
