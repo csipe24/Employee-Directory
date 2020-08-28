@@ -4,7 +4,9 @@ import Directory from './pages/Directory';
 
 function App(){
     return(
+        <div>
         <Directory/>
+        </div>
     )
 }
 
