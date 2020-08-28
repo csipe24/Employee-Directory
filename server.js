@@ -3,11 +3,11 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const path = require("path");
 
-const publicPath = path.join(__dirname, 'build');
-app.use(express.static(public));
+const publicP = path.join(__dirname, 'build');
+app.use(express.static(publicP));
 
 app.get('*', (req,res) =>{
-  res.sendFile(path.join(publicPath, 'index.html'));
+  res.sendFile(path.join(publicP, 'index.html'));
 });
 
 app.listen(PORT, () => {
